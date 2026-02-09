@@ -5,14 +5,14 @@ public class Ejercicio9 {
     public static void main(String args[]){
         Scanner scan=new Scanner(System.in);
         int[] numeros=new int[10];
-        for(int i=0; i<10; i++){
-            System.out.println("Numero "+i);
+        for(int i=0; i<numeros.length; i++){
+            System.out.print("Numero "+(i+1)+": ");
             numeros[i]=scan.nextInt();
         }
-        System.out.println("RESULTADOS");
-        System.out.println("Valor mas alto: "+maximo(numeros));
-        System.out.println("Valor mas bajo: "+minimo(numeros));
-        System.out.println("Media muestral: "+mediaMuestral(numeros));
+        System.out.println("\nRESULTADOS");
+        System.out.println("Valor maximo: "+maximo(numeros));
+        System.out.println("Valor minimo: "+minimo(numeros));
+        System.out.println("Valor medio: "+mediaMuestral(numeros));
         scan.close();
     }
 
